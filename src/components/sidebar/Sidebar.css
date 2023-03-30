@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  font-family: "Noto Sans JP";
+}
+
+body {
+  margin: 0;
+}
+
+.flex, .sidebar .sidebarleft, .sidebar .sidebarRight .sidebarTop, .sidebar .sidebarRight .sidebarChannels .sidebarChannelsHeader, .sidebar .sidebarRight .sidebarFooter, .sidebar .sidebarRight .sidebarFooter .sidebarAccount, .sidebar .sidebarRight .sidebarFooter .sidebarVoice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.positioncenter, .sidebar .sidebarleft .serverIcon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cursorpointer, .sidebar .sidebarleft .serverIcon img, .sidebar .sidebarRight .sidebarFooter .sidebarVoice .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sidebar .sidebarleft {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 15px 0;
+  background-color: #31363b;
+}
+.sidebar .sidebarleft .serverIcon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #31363b;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+}
+.sidebar .sidebarleft .serverIcon img {
+  width: 100%;
+}
+.sidebar .sidebarRight {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  position: relative;
+  background-color: #2d2d35;
+}
+.sidebar .sidebarRight .sidebarTop {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px 0;
+  color: white;
+}
+.sidebar .sidebarRight .sidebarChannels {
+  height: 100vh;
+  padding: 13px;
+}
+.sidebar .sidebarRight .sidebarChannels .sidebarChannelsHeader {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  color: white;
+}
+.sidebar .sidebarRight .sidebarChannels .sidebarChannelsHeader .sidebarHeader {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sidebar .sidebarRight .sidebarChannels .sidebarChannelsHeader .sidebarAddIcon {
+  cursor: pointer;
+}
+.sidebar .sidebarRight .sidebarFooter {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #686a6e;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarAccount img {
+  width: 60px;
+  padding: 10px 10px 0;
+  border-radius: 50%;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarAccount .accountName {
+  margin-left: 15px;
+  color: white;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarAccount .accountName h4 {
+  font-weight: 500;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarAccount .accountName span {
+  color: #686a6e;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarVoice {
+  color: #686a6e;
+}
+.sidebar .sidebarRight .sidebarFooter .sidebarVoice .honesIcon {
+  padding: 0 3px;
+}/*# sourceMappingURL=Sidebar.css.map */

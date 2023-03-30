@@ -1,0 +1,105 @@
+@use "../global/index" as i;
+
+.sidebar {
+  display: flex;
+  // background-color: #31363b; //TODO:後でHomeコンポネントに追加させる
+
+  .sidebarleft {
+    @extend .flex;
+    flex-direction: column;
+    padding: 15px 15px 0;
+    background-color: i.$cDrakGray;
+
+    .serverIcon {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: i.$cDrakGray;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+
+      img {
+        @extend .positioncenter;
+        @extend .cursorpointer;
+        width: 100%;
+      }
+    }
+  }
+
+  .sidebarRight {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    background-color: #2d2d35;
+
+    .sidebarTop {
+      @extend .flex;
+      justify-content: space-between;
+      padding: 20px 20px 0;
+      color: i.$cWhite;
+    }
+
+    .sidebarChannels {
+      height: 100vh;
+      padding: 13px;
+
+      .sidebarChannelsHeader {
+        @extend .flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        color: i.$cWhite;
+
+        .sidebarHeader {
+          display: flex;
+        }
+
+        .sidebarAddIcon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .sidebarFooter {
+      @extend .flex;
+      justify-content: space-between;
+      border-top: 1px solid i.$cLigthGray;
+
+      .sidebarAccount {
+        @extend .flex;
+
+        img {
+          width: 60px;
+          padding: 10px 10px 0;
+          border-radius: 50%;
+        }
+
+        .accountName {
+          margin-left: 15px;
+          color: i.$cWhite;
+
+          h4 {
+            font-weight: 500;
+          }
+
+          span {
+            color: i.$cLigthGray;
+          }
+        }
+      }
+
+      .sidebarVoice {
+        @extend .flex;
+        color: i.$cLigthGray;
+
+        .MuiSvgIcon-root {
+          @extend .cursorpointer;
+        }
+
+        .honesIcon {
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+}

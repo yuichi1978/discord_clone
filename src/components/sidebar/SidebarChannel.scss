@@ -1,0 +1,27 @@
+@use "../global/index" as i;
+
+.sidebarChannel {
+  padding-left: 10px;
+  margin-top: 2px;
+  
+  h4 {
+    @extend .flex;
+    font-size: 1.0em;
+    color: i.$cSilver;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+      color: i.$cWhite;
+      background-color: #33363d;
+      border-radius: 7px;
+    }
+  }
+
+  .sidebarChannelHash {
+    font-size: 22px;
+    padding-right: 10px;
+  }
+}

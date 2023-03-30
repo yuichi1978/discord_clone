@@ -1,0 +1,15 @@
+@use "../global/index" as i;
+
+.message {
+  @extend .flex;
+
+  .messageInfo {
+    padding: 20px 20px 20px 10px;
+  }
+
+  .messageTimestamp {
+    margin-left: 20px;
+    color: i.$cSilver;
+  }
+
+}

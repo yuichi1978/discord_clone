@@ -1,0 +1,42 @@
+@use "../global/index" as i;
+
+.chatHeader {
+  @extend .flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+
+  .chatHeaderLeft {
+    padding-left: 15px;
+
+    .chatHeaderHash {
+      color: #7b7c85;
+      padding-right: 5px;
+    }
+  }
+
+  .chatHeaderRight {
+    @extend .flex;
+    gap: 10px;
+    padding-right: 15px;
+    color: i.$cSilver;
+
+    .chatHeaderSearch {
+      @extend .flex;
+      background-color: #1614368c;
+      border-radius: 2px;
+
+      input {
+        margin-right: 5px;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: i.$cWhite;
+      }
+    }
+
+    .MuiSvgIcon-root {
+      @extend .cursorpointer;
+    }
+  }
+}

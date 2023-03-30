@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  font-family: "Noto Sans JP";
+}
+
+body {
+  margin: 0;
+}
+
+.flex, .sidebarChannel h4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.positioncenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cursorpointer {
+  cursor: pointer;
+}
+
+.sidebarChannel {
+  padding-left: 10px;
+  margin-top: 2px;
+}
+.sidebarChannel h4 {
+  font-size: 1em;
+  color: #7b7c85;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sidebarChannel h4:hover {
+  opacity: 0.8;
+  color: white;
+  background-color: #33363d;
+  border-radius: 7px;
+}
+.sidebarChannel .sidebarChannelHash {
+  font-size: 22px;
+  padding-right: 10px;
+}/*# sourceMappingURL=SidebarChannel.css.map */

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  font-family: "Noto Sans JP";
+}
+
+body {
+  margin: 0;
+}
+
+.flex, .chatHeader, .chatHeader .chatHeaderRight, .chatHeader .chatHeaderRight .chatHeaderSearch {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.positioncenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cursorpointer, .chatHeader .chatHeaderRight .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.chatHeader {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+}
+.chatHeader .chatHeaderLeft {
+  padding-left: 15px;
+}
+.chatHeader .chatHeaderLeft .chatHeaderHash {
+  color: #7b7c85;
+  padding-right: 5px;
+}
+.chatHeader .chatHeaderRight {
+  gap: 10px;
+  padding-right: 15px;
+  color: #7b7c85;
+}
+.chatHeader .chatHeaderRight .chatHeaderSearch {
+  background-color: rgba(22, 20, 54, 0.5490196078);
+  border-radius: 2px;
+}
+.chatHeader .chatHeaderRight .chatHeaderSearch input {
+  margin-right: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}/*# sourceMappingURL=ChatHeader.css.map */

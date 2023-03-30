@@ -1,0 +1,50 @@
+@use "../global/index" as i;
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: i.$cWhite;
+  background-color: i.$cDrakGray;
+  height: 100vh;
+
+  .chatMessage {
+    height: 100vh;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+
+  .chatInput {
+    @extend .flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 10px 0;
+    background-color: #474b53;
+    border-radius: 5px;
+
+    .chatInputbutton {
+      display: none;
+    }
+    
+    form {
+      flex-grow: 1;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: i.$cWhite;
+        font-size: large;
+      }
+    }
+
+    .chatInputIcons {
+      .MuiSvgIcon-root {
+        @extend .cursorpointer;
+        padding: 3px;
+      }
+    }
+  }
+}
