@@ -32,7 +32,7 @@ export const Sidebar: FC = memo(() => {
       {/* sidebarLeft */}
       <div className="sidebarleft">
         <div className="serverIcon">
-          <img src="./public/discordIcon.png" alt="" />
+          <img src="./discordIcon.png" alt="" />
         </div>
       </div>
       {/* sidebarRight */}
